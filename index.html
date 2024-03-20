@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculator🧮</h1>
+
+    <div id="calculator">
+        <input type="text" id="display" readonly placeholder="Enter here">
+        <div class="resize">
+            <button onclick="let numAdd = document.querySelector('#display'); numAdd.value += '7';">7</button>
+            <button onclick=" numAdd = document.querySelector('#display'); numAdd.value += '8';">8</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '9';">9</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '/';">/</button>
+        </div>
+        <div class="resize">
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '4';">4</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '5';">5</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '6';">6</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '*';">*</button>
+        </div>
+        <div class="resize">
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '1';">1</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '2';">2</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '3';">3</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '-';">-</button>
+        </div>
+        <div class="resize">
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '0';">0</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value = '';">C</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value = eval(numAdd.value);">=</button>
+            <button onclick="numAdd = document.querySelector('#display'); numAdd.value += '+';">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
